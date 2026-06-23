@@ -5,9 +5,12 @@ export type Column = {
   title: string;
 };
 
+export type Priority = "Düşük" | "Orta" | "Yüksek";
+
 export type Task = {
   id : Id;
   columnId: Id;
   content: string;
-
+  description?: string;
+  priority?: Priority; 
 };
